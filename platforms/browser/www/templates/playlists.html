@@ -1,0 +1,9 @@
+<ion-view view-title="Veda Paatashala">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" ng-click="create('assets/{{playlist.id}}.pdf')" href="./assets/{{playlist.id}}.pdf">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

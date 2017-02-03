@@ -1,0 +1,12 @@
+<ion-view view-title="Veda Paatashala">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" ng-click="pdfURL='{{playlist.id}}.pdf'">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+    <pdfviewer src="{{pdfURL}}" on-page-load='pageLoaded(page,total)' id="viewer" load-progress='loadProgress(loaded, total, state)'></pdfviewer>
+  </ion-content>
+</ion-view>
+
+
